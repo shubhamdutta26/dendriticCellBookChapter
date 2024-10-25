@@ -11,23 +11,23 @@ author:
         city: Worcester
         state: MA
         url: www.umassmed.edu
-format: docx
-#format: 
-#  pdf:
-#   keep-tex: true
-#   geometry:
-#     - top=30mm
-#     - left=30mm
-#     - heightrounded
-#   template-partials: 
-#     - title.tex
-#   include-in-header:
-#      text: |
-#        \usepackage[noblocks]{authblk}
-#        \renewcommand*{\Authsep}{, }
-#        \renewcommand*{\Authand}{, }
-#        \renewcommand*{\Authands}{, }
-#        \renewcommand\Affilfont{\small}
+# format: docx
+format: 
+  pdf:
+   keep-tex: true
+   geometry:
+     - top=30mm
+     - left=30mm
+     - heightrounded
+   template-partials: 
+     - title.tex
+   include-in-header:
+      text: |
+        \usepackage[noblocks]{authblk}
+        \renewcommand*{\Authsep}{, }
+        \renewcommand*{\Authand}{, }
+        \renewcommand*{\Authands}{, }
+        \renewcommand\Affilfont{\small}
 csl: vancouver.csl
 bibliography: references.bib
 mainfont: "Times New Roman"
@@ -47,37 +47,147 @@ editor:
     wrap: sentence
 ---
 
+## Abbreviations
+
+| Abbreviations | Definitions |
+|---------------------|--------------------------------------------------|
+| ACT | Adoptive cellular therapy |
+| APC | Antigen presenting cells |
+| CAR | Chimeric antigen receptor |
+| CD | Cluster of differentiation |
+| CLEC | C-type lectin |
+| CLR | C-type lectin receptor |
+| COVID | Coronavirus disease |
+| CTL | Cytotoxic T lymphocyte |
+| CTLA | Cytotoxic T lymphocyte-associated antigen |
+| CR | Chemokine receptor |
+| DAMP | Damage-associated molecular pattern |
+| DC | Dendritic cell |
+| DCIR2 | Dendritic cell immunoreceptor |
+| DEC205 | Cluster of differentiation 205/ CD205 |
+| DNA | Deoxyribonucleic acid |
+| EC | European commission |
+| ELISA | Enzyme-linked immunosorbent assay |
+| EU | European union |
+| F~C~ | Fragment crystallizable region |
+| FDA | United States Food and Drug Administration |
+| GBM | Glioblastoma multiforme |
+| GILZ | Glucocorticoid-induced leucine zipper |
+| GM-CSF | Granulocyte-macrophage colony-stimulating factor |
+| GMP | Good manufacturing practice |
+| HIV | Human immunodeficiency virus |
+| HLA | Human leukocyte antigen |
+| HSC | Hematopoietic stem cell |
+| IFN | Interferon |
+| IL | Interleukin |
+| IRF | Interferon regulatory factor |
+| JAK/STAT | Janus kinase/ Signal transducer and activator of transcription |
+| LC | Langerhans cell |
+| LN | Lymph node |
+| LPS | Lipopolysaccharide |
+| mAb | Monoclonal antibody |
+| MACS | Magnetic-activated cell sorting |
+| MHC | Major histocompatibility complex |
+| MR | Mannose receptor |
+| NCT | National clinical trial |
+| NK | Natural killer |
+| NOD | Nucleotide-binding oligomerization-domain |
+| PAMP | Pathogen-associated molecular patterns |
+| PBMC | Peripheral blood mononuclear cell |
+| PD | Programmed cell death protein |
+| PDL | Programmed death-ligand |
+| PKR | Protein kinase RNA-activated |
+| PRR | Pattern recognition receptor |
+| RECIST | Response evaluation criteria in solid tumors |
+| RIG-I | Retinoic acid-inducible gene-I |
+| RNA | Ribonucleic acid |
+| RPMI | Roswell Park Memorial Institute |
+| DC-SIGN | Dendritic cell-specific intracellular adhesion molecules (ICAM)-3 grabbing non-integrin |
+| SOCS | Suppressors of cytokine signaling |
+| TAA | Tumor-associated antigens |
+| T~C~ | Cytotoxic T lymphocyte |
+| TCR | T-cell receptor |
+| TFH | T-follicular helper cells |
+| TGF | Transforming growth factor |
+| T~H~ | Helper T lymphocyte |
+| TIL | Tumor-infiltrating lymphocytes |
+| TIM3 | T cell immunoglobulin and mucin domain-containing protein |
+| TLR | Toll-like receptor |
+| TME | Tumor microenvironment |
+| TNF | Tumor necrosis factor |
+| T~REG~ | Regulatory T lymphocyte |
+| WHO | World health organization |
+
 ## Abstract
 
-Dendritic cells (DCs) stand out as a highly promising tool for triggering immune responses in cancer immunotherapy. DCs are recognized as potent antigen-presenting cells (APCs) which excel in generating robust immune reactions, and play a pivotal role in connecting the innate and adaptive arms of the immune system. Consequently, DC-based cancer immunotherapy seeks to leverage these distinctive qualities to enhance the battle against cancer. Over the past decades, extensive research has focused on developing immunotherapeutic strategies against cancer through vaccination. To achieve this goal, a comprehensive understanding of DC immunobiology, the regulation of innate and adaptive immune systems, the tumor microenvironment, and the integration of cutting-edge scientific advances is imperative to unlock their significant anti-tumor immunotherapeutic potential. This chapter concentrates on delving into various aspects of DC immunobiology, including their origin, localization, unique properties, distinct subsets, and their connection to innate and adaptive immunity. Additionally, it explores the contemporary concept of cancer immunotherapy and sheds light on insights derived from clinical trials involving DC vaccines. Ultimately, the chapter outlines future perspectives for this burgeoning field.
+Dendritic cells (DCs) stand out as a highly promising tool for triggering immune responses in cancer immunotherapy.
+DCs are recognized as potent antigen-presenting cells (APCs) which excel in generating robust immune reactions, and play a pivotal role in connecting the innate and adaptive arms of the immune system.
+Consequently, DC-based cancer immunotherapy seeks to leverage these distinctive qualities to enhance the battle against cancer.
+Over the past decades, extensive research has focused on developing immunotherapeutic strategies against cancer through vaccination.
+To achieve this goal, a comprehensive understanding of DC immunobiology, the regulation of innate and adaptive immune systems, the tumor microenvironment, and the integration of cutting-edge scientific advances is imperative to unlock their significant anti-tumor immunotherapeutic potential.
+This chapter concentrates on delving into various aspects of DC immunobiology, including their origin, localization, unique properties, distinct subsets, and their connection to innate and adaptive immunity.
+Additionally, it explores the contemporary concept of cancer immunotherapy and sheds light on insights derived from clinical trials involving DC vaccines.
+Ultimately, the chapter outlines future perspectives for this burgeoning field.
 
 ## Introduction
 
-Dendritic cells (DCs) originate from pluripotent hematopoietic stem cells (HSCs) in the bone marrow, belonging to a category of antigen-presenting cells (APCs) alongside B-cells and macrophages. First identified in 1973 by Canadian scientists Ralph Steinman and Zanvil Cohn, DCs were initially an undefined cell type in mouse spleens [@chen2016dendritic]. They were later termed 'dendritic cells' due to their characteristic features of multiple pseudopodia-like cytoplasmic protrusions during maturation (@fig-dc). Serving as sentinel cells, DCs are ubiquitously distributed throughout the body, found in the mucosal surfaces, skin, interstitial tissues, peripheral blood, lymphoid and non-lymphoid tissues [@rehman2017dendritic]. Studying DCs are crucial because they are potent in presenting antigens to T-cells. They play a central role in the immune system by initiating inflammatory responses to pathogens. This leads to efficient T-cell activation and subsequent B-cell activation. Additionally, DCs continuously presents tissue-derived self-antigens to CD4^+^ and CD8^+^ T-cells, leading to tolerance against self-antigens. They are integral to the development of an effective adaptive immune response, serving as a critical link between the innate and adaptive immune systems.
+Dendritic cells (DCs) originate from pluripotent hematopoietic stem cells (HSCs) in the bone marrow, belonging to a category of antigen-presenting cells (APCs) alongside B-cells and macrophages.
+First identified in 1973 by Canadian scientists Ralph Steinman and Zanvil Cohn, DCs were initially an undefined cell type in mouse spleens [@chen2016dendritic].
+They were later termed 'dendritic cells' due to their characteristic features of multiple pseudopodia-like cytoplasmic protrusions during maturation (@fig-dc).
+Serving as sentinel cells, DCs are ubiquitously distributed throughout the body, found in the mucosal surfaces, skin, interstitial tissues, peripheral blood, lymphoid and non-lymphoid tissues [@rehman2017dendritic].
+Studying DCs are crucial because they are potent in presenting antigens to T-cells.
+They play a central role in the immune system by initiating inflammatory responses to pathogens.
+This leads to efficient T-cell activation and subsequent B-cell activation.
+Additionally, DCs continuously presents tissue-derived self-antigens to CD4^+^ and CD8^+^ T-cells, leading to tolerance against self-antigens.
+They are integral to the development of an effective adaptive immune response, serving as a critical link between the innate and adaptive immune systems.
 
 ![(A) An image of a dendritic cell. The arrows show pseudopodia-like cytoplasmic protrusions during maturation; (B) A confocal image of a human dendritic cell. The nucleus is shown in red. (Image by: Karla Daniels, Central Microscopy Research Facility, University of Iowa)](images/fig_1.png){#fig-dc}
 
 ## Role of Dendritic Cells in the Immune System
 
-Dendritic cells (DCs) differentiate from pluripotent hematopoietic stem cells (HSCs) in the bone marrow, belonging to a category of antigen-presenting cells (APCs) alongside B-cells and macrophages (@fig-hsc). The role of DCs in the immune system involves phagocytosing, processing, and presenting antigens to both MHC Class-I and -II molecules on T-cells. Initially generated in the bone marrow through hematopoiesis, immature DCs migrate from the bone marrow to non-lymphoid tissues, where they actively monitor the tissues for foreign antigens [@steinman2012decisions]. Recognition of foreign antigens by DCs is facilitated through specialized surface receptors such as retinoic acid-inducible gene-I (RIGI) and 'pattern-recognition receptors', such as TLR, C-type lectins (CLR). These receptors bind to distinct components on the foreign antigen (for e.g. microbes), recognizing a conserved region called a ‘pathogen-associated molecular pattern'(PAMP), such as lipopeptides, lipopolysaccharides (LPS), or nucleic acids (viral or bacterial RNA & DNA). This recognition leads to the internalization of the foreign antigen after which they migrate to the lymph nodes where they present antigens to T-cells. Mature DCs lose their antigen-uptake capacity and become antigen-presenting cells (APCs). This leads to the expression of MHC-I and MHC-II molecules on their surface, up-regulation of several costimulatory surface molecules like CD40, CD80, and CD86, and the production of immunostimulatory cytokines. Upon interaction with naïve CD4^+^ T-cells, DCs play a crucial role in differentiating these T-cells into antigen-specific helper T-cells (T~H~) (such as T~H~1, T~H~2, T~H~17) and T-follicular helper cells (T~FH~). The specific type of T~H~cell generated depends on factors such as the type of captured antigen (bacterial, viral, etc.) and the types of costimulatory molecules and interleukins expressed by the DCs. This process ultimately results in the proliferation and clonal expansion of T-cells, playing a vital role in B-cell development and antibody production [@wykes2000dendritic].
+Dendritic cells (DCs) differentiate from pluripotent hematopoietic stem cells (HSCs) in the bone marrow, belonging to a category of antigen-presenting cells (APCs) alongside B-cells and macrophages (@fig-hsc).
+The role of DCs in the immune system involves phagocytosing, processing, and presenting antigens to both MHC Class-I and -II molecules on T-cells.
+Initially generated in the bone marrow through hematopoiesis, immature DCs migrate from the bone marrow to non-lymphoid tissues, where they actively monitor the tissues for foreign antigens [@steinman2012decisions].
+Recognition of foreign antigens by DCs is facilitated through specialized surface receptors such as retinoic acid-inducible gene-I (RIG-I) and 'pattern-recognition receptors', such as TLR, C-type lectins (CLR).
+These receptors bind to distinct components on the foreign antigen (for e.g. microbes), recognizing a conserved region called a ‘pathogen-associated molecular pattern'(PAMP), such as lipopeptides, lipopolysaccharides (LPS), or nucleic acids (viral or bacterial RNA & DNA).
+This recognition leads to the internalization of the foreign antigen after which they migrate to the lymph nodes where they present antigens to T-cells.
+Mature DCs lose their antigen-uptake capacity and become antigen-presenting cells (APCs).
+This leads to the expression of MHC-I and MHC-II molecules on their surface, up-regulation of several costimulatory surface molecules like CD40, CD80, and CD86, and the production of immunostimulatory cytokines.
+Upon interaction with naïve CD4^+^ T-cells, DCs play a crucial role in differentiating these T-cells into antigen-specific helper T-cells (T~H~) (such as T~H~1, T~H~2, T~H~17) and T-follicular helper cells (T~FH~).
+The specific type of T~H~cell generated depends on factors such as the type of captured antigen (bacterial, viral, etc.) and the types of costimulatory molecules and interleukins expressed by the DCs.
+This process ultimately results in the proliferation and clonal expansion of T-cells, playing a vital role in B-cell development and antibody production [@wykes2000dendritic].
 
 ![Hematopoietic Family Tree Showing how the Mature Cells in the Various Lineages Are Generated by Self-Generating Hematopoietic Stem Cells](images/hsc_diff.png){#fig-hsc}
 
 ## Dendritic Cell Biology
 
-The detection of foreign antigens by DCs represents a crucial stage in activating the adaptive immune system. Various DC subsets express diverse sets of pattern recognition receptors (PRRs), allowing for both overlap and exclusivity in recognizing 'danger' signals. The maturation and activation of DC mediated by PRRs can be gauged by alterations in the surface expression of costimulatory molecules, changes in the size and shape of DCs, and the production of different cytokines.
+The detection of foreign antigens by DCs represents a crucial stage in activating the adaptive immune system.
+Various DC subsets express diverse sets of pattern recognition receptors (PRRs), allowing for both overlap and exclusivity in recognizing 'danger' signals.
+The maturation and activation of DC mediated by PRRs can be gauged by alterations in the surface expression of costimulatory molecules, changes in the size and shape of DCs, and the production of different cytokines.
 
 ### Overview of Dendritic Cell Types
 
-DCs play a crucial role as immune sentinels, essential for initiating and regulating immune responses. This diverse population exhibits phenotypic and functional variations in, depending on their location within the body and their specific immunological functions. In a non-activated or 'steady state', immature DCs continually survey their local environment, actively seeking foreign antigens for presentation to T-cells. These immature DCs has elevated expression of CD11c, intermediate expression of MHC-II, and limited expression of surface costimulatory molecules such as CD25, CD40, CD69, CD80, CD83, and CD86. When 'steady state' DCs capture antigens, they migrate to lymph nodes to present the antigens to T-cells. These 'mature' DCs exhibit increased expression of MHCII and costimulatory markers although these DCs may not be fully activated. Complete activation of DCs relies on their recognition of 'danger signals' that is accomplished through pattern recognition receptors (PRRs). DCs can be generally classified into three distinct subsets based on their maturation/activation status:
+DCs play a crucial role as immune sentinels, essential for initiating and regulating immune responses.
+This diverse population exhibits phenotypic and functional variations in, depending on their location within the body and their specific immunological functions.
+In a non-activated or 'steady state', immature DCs continually survey their local environment, actively seeking foreign antigens for presentation to T-cells.
+These immature DCs has elevated expression of CD11c, intermediate expression of MHC-II, and limited expression of surface costimulatory molecules such as CD25, CD40, CD69, CD80, CD83, and CD86.
+When 'steady state' DCs capture antigens, they migrate to lymph nodes to present the antigens to T-cells.
+These 'mature' DCs exhibit increased expression of MHCII and costimulatory markers although these DCs may not be fully activated.
+Complete activation of DCs relies on their recognition of 'danger signals' that is accomplished through pattern recognition receptors (PRRs).
+DCs can be generally classified into three distinct subsets based on their maturation/activation status:
 
-1.  Immature, nonactivated DCs, 'steady state' DCs found in the spleen, exhibit high levels of CD11c, and low-to-intermediate expression of MHC-II and costimulatory markers. In the absence of prior activation, these DCs do not generate inflammatory cytokines but can stimulate naïve T-cells. Plasmacytoid (p) DCs express lower levels of CD11c and MHC-II, are weak stimulators of naïve T-cells, and do not produce pro-inflammatory cytokines in the 'steady state'.
+1.  Immature, nonactivated DCs, 'steady state' DCs found in the spleen, exhibit high levels of CD11c, and low-to-intermediate expression of MHC-II and costimulatory markers.
+    In the absence of prior activation, these DCs do not generate inflammatory cytokines but can stimulate naïve T-cells.
+    Plasmacytoid (p) DCs express lower levels of CD11c and MHC-II, are weak stimulators of naïve T-cells, and do not produce pro-inflammatory cytokines in the 'steady state'.
 
 2.  Mature but non-activated, and potentially tolerogenic, migratory DCs exhibit intermediate CD11c expression and higher levels of MHC-II and costimulatory markers on their surface and does not produce inflammatory cytokines.
 
-3.  Mature, activated DCs have encountered 'danger signals' in response to an invading pathogen or damaged self. Depending on the DC subset these DCs produce substantial amounts of inflammatory cytokines very high levels of MHC-II and costimulatory molecules on their surface.
+3.  Mature, activated DCs have encountered 'danger signals' in response to an invading pathogen or damaged self.
+    Depending on the DC subset these DCs produce substantial amounts of inflammatory cytokines very high levels of MHC-II and costimulatory molecules on their surface.
 
-DCs recognize pathogen-associated signals through Pattern Recognition Receptors (PRRs) located on its surface. Since the identification of the first mammalian Toll-like Receptors (TLRs) that activated the innate immune system [@medzhitov1997human], the innate immune system has demonstrated plasticity in responding to invading pathogens. These activating ‘danger signals' recognized by DCs are the following:
+DCs recognize pathogen-associated signals through Pattern Recognition Receptors (PRRs) located on its surface.
+Since the identification of the first mammalian Toll-like Receptors (TLRs) that activated the innate immune system [@medzhitov1997human], the innate immune system has demonstrated plasticity in responding to invading pathogens.
+These activating ‘danger signals' recognized by DCs are the following:
 
 1.  Pathogen-Associated Molecular Patterns (PAMPs), which are evolutionarily conserved molecules associated with pathogens (for e.g. LPS, bacterial and viral nucleic acids), not typically found within eukaryotes.
 
@@ -85,102 +195,244 @@ DCs recognize pathogen-associated signals through Pattern Recognition Receptors 
 
 3.  Inflammatory cytokines.
 
-The response to danger signals triggers alterations in the phenotype and morphology of DCs. These modifications encompass an augmented expression of MHC molecules on the cell surface, upregulation of costimulatory markers, cytokine and chemokine release, and the release of cellular proteases. Microscopy, flow cytometry analysis, or assays measuring soluble protein excretion, such as ELISA or Multiplexed Bead-based Immunoassays, can effectively detect all these changes induced by maturation or activation.
+The response to danger signals triggers alterations in the phenotype and morphology of DCs.
+These modifications encompass an augmented expression of MHC molecules on the cell surface, upregulation of costimulatory markers, cytokine and chemokine release, and the release of cellular proteases.
+Microscopy, flow cytometry analysis, or assays measuring soluble protein excretion, such as ELISA or Multiplexed Bead-based Immunoassays, can effectively detect all these changes induced by maturation or activation.
 
 ### Antigen Presentation by Dendritic Cells
 
-Immature dendritic cells recognize pathogen-associated molecular patterns (PAMPs) — structures that are evolutionarily conserved, such as microbial LPS, carbohydrates, nucleic acids, and intermediates of viral replication. This recognition is facilitated through pattern recognition receptors (PRRs). Various PRRs participate in the innate recognition of pathogens, including nucleotide-binding oligomerization-domain (NOD-like) receptors, C-type lectin receptors (CLRs), Toll-like receptors (TLRs), RIG-I-like helicases, & active protein kinase (PKR) [@van2012optimizing]. Various mechanisms such as macropinocytosis, endocytosis, and receptor-mediated phagocytosis are employed to capture foreign antigens after antigen recognition [@palucka2012cancer; @steinman2007taking; @borghaei2009immunotherapy]. Specifically, in the case of receptor-mediated phagocytosis, it involves the engulfment of pathogens such as bacterial cells. This process requires actin re-modeling to create a cup-shaped structure around the foreign particle, which subsequently closes to form a phagosome. The various processes of antigen capture by DCs are facilitated by numerous receptors that transport the antigen to processing compartments [@palucka2012cancer; @steinman2007taking; @borghaei2009immunotherapy]. DCs convert proteins into peptides, presenting them on major histocompatibility complex (MHC) molecules, specifically MHC class I and II (@fig-dc-present) [@palucka2012cancer; @steinman2007taking]. In the case of lipid antigens, their processing differs as they are loaded onto non-classical MHC molecules belonging to the CD1 family [@palucka2012cancer]. Following antigen uptake and processing, DCs present antigens in the following ways:
+Immature dendritic cells recognize pathogen-associated molecular patterns (PAMPs) — structures that are evolutionarily conserved, such as microbial LPS, carbohydrates, nucleic acids, and intermediates of viral replication.
+This recognition is facilitated through pattern recognition receptors (PRRs).
+Various PRRs participate in the innate recognition of pathogens, including nucleotide-binding oligomerization-domain (NOD-like) receptors, C-type lectin receptors (CLRs), Toll-like receptors (TLRs), RIG-I-like helicases, & active protein kinase (PKR) [@van2012optimizing].
+Various mechanisms such as macropinocytosis, endocytosis, and receptor-mediated phagocytosis are employed to capture foreign antigens after antigen recognition [@palucka2012cancer; @steinman2007taking; @borghaei2009immunotherapy].
+Specifically, in the case of receptor-mediated phagocytosis, it involves the engulfment of pathogens such as bacterial cells.
+This process requires actin re-modeling to create a cup-shaped structure around the foreign particle, which subsequently closes to form a phagosome.
+The various processes of antigen capture by DCs are facilitated by numerous receptors that transport the antigen to processing compartments [@palucka2012cancer; @steinman2007taking; @borghaei2009immunotherapy].
+DCs convert proteins into peptides, presenting them on major histocompatibility complex (MHC) molecules, specifically MHC class I and II (@fig-dc-present) [@palucka2012cancer; @steinman2007taking].
+In the case of lipid antigens, their processing differs as they are loaded onto non-classical MHC molecules belonging to the CD1 family [@palucka2012cancer].
+Following antigen uptake and processing, DCs present antigens in the following ways:
 
-1.  Via MHC-II to CD4^+^ T lymphocytes (exogenous route): This route typically occurs when exogenous peptides are presented by DCs through MHC-II molecules. These peptides are derived from proteins that have undergone endocytosis and degradation by acid-dependent proteases in endosomes [@steinman2007taking; @boudreau2011engineering].
+1.  Via MHC-II to CD4^+^ T lymphocytes (exogenous route): This route typically occurs when exogenous peptides are presented by DCs through MHC-II molecules.
+    These peptides are derived from proteins that have undergone endocytosis and degradation by acid-dependent proteases in endosomes [@steinman2007taking; @boudreau2011engineering].
 
-2.  Via MHC-I to CD8^+^ T lymphocytes (endogenous route): In this route DCs present intracellular antigens associated through MHC class I molecules. For instance, during a viral infection, DCs can present viral peptides, allowing the immune system to recognize and activate CD8^+^ T lymphocytes, leading to the elimination of infected cells [@steinman2007taking; @boudreau2011engineering].
+2.  Via MHC-I to CD8^+^ T lymphocytes (endogenous route): In this route DCs present intracellular antigens associated through MHC class I molecules.
+    For instance, during a viral infection, DCs can present viral peptides, allowing the immune system to recognize and activate CD8^+^ T lymphocytes, leading to the elimination of infected cells [@steinman2007taking; @boudreau2011engineering].
 
-3.  Via cross-presentation: This involves presenting exogenous antigens on MHC-I molecules, ultimately stimulating CD8^+^ T lymphocytes or cytotoxic T-cells (T~C~cells). Phagocytosis is a critical process for cross-presentation, and it is noteworthy that this capability is a distinctive feature of DCs, particularly specific subsets such as CD8^+^ DCs and migratory CD103+ DCs [@steinman2007taking; @boudreau2011engineering; @joffre2012cross].
+3.  Via cross-presentation: This involves presenting exogenous antigens on MHC-I molecules, ultimately stimulating CD8^+^ T lymphocytes or cytotoxic T-cells (T~C~cells).
+    Phagocytosis is a critical process for cross-presentation, and it is noteworthy that this capability is a distinctive feature of DCs, particularly specific subsets such as CD8^+^ DCs and migratory CD103+ DCs [@steinman2007taking; @boudreau2011engineering; @joffre2012cross].
 
 ## Dendritic cell isolation and culture
 
 ### Methods for isolating dendritic cells
 
-DCs makes up only about 0.2 % of human blood mononuclear cells and can be isolated and enriched using several methods. One method is to use density gradient centrifugation over metrizamide to isolate dendritic cells from human mononuclear cells. Mononuclear cells are isolated from leukapheresis pack or buffy coat preparation by Ficoll-Paque density gradient and the T-cells are depleted using magnetic beads conjugated with anti-TCRα/β monoclonal antibodies. The T-cell depleted cell suspension is incubated overnight in RPMI1640 media at 37°C on tissue-culture plates. This allows the monocytes to adhere to the plastic and helps the DCs to further differentiate into mature DCs in suspension. The non-adherent T-cells are gently removed, and the process is repeated a second time to further enrich DCs. The resulting cell suspension is subjected to gradient centrifugation with sterile 14.5 % metrizamide solution. Cells at the interface of the top layer (RPMI1640) and bottom metrizamide layer are carefully removed which contains 20% to 80% dendritic cells and is largely free of lymphocytes [@nair2012isolation; @tedder1997isolation]. Another method is to isolate adherent monocytes (described above) and incubate with TNF-α, GM-CSF, and IL-4 for 5-7 days. The differentiation process occurs withouT-cell proliferation, making the quantity of monocytes a critical factor for dendritic cell recovery. As monocytes are more abundant than dendritic cells, this approach can lead to higher yields compared to the previous protocol [@zhou1996cd14]. Highly purified dendritic cell preparations can be obtained from these populations by a process known as magnetic-activated cell sorting (MACS). In this protocol mononuclear cells are incubated with a mix of anti-CD3, -CD14, -CD19, and -CD56 monoclonal antibodies conjugated with magnetic beads. Using a magnetic separation apparatus lymphocytes, monocytes, and NK cells are depleted and the resulting cell suspension is incubated overnight in RPMI1640 media at 37°C on tissue-culture plates. The non-adherent T-cells are gently removed and incubated with anti-CD83 antibody conjugated to magnetic beads. The resulting CD83 positive population contains highly enriched population of DCs for various downstream applications [@nair2012isolation; @tedder1997isolation].
+DCs makes up only about 0.2 % of human blood mononuclear cells and can be isolated and enriched using several methods.
+One method is to use density gradient centrifugation over metrizamide to isolate dendritic cells from human mononuclear cells.
+Mononuclear cells are isolated from leukapheresis pack or buffy coat preparation by Ficoll-Paque density gradient and the T-cells are depleted using magnetic beads conjugated with anti-TCRα/β monoclonal antibodies.
+The T-cell depleted cell suspension is incubated overnight in RPMI1640 media at 37°C on tissue-culture plates.
+This allows the monocytes to adhere to the plastic and helps the DCs to further differentiate into mature DCs in suspension.
+The non-adherent T-cells are gently removed, and the process is repeated a second time to further enrich DCs.
+The resulting cell suspension is subjected to gradient centrifugation with sterile 14.5 % metrizamide solution.
+Cells at the interface of the top layer (RPMI1640) and bottom metrizamide layer are carefully removed which contains 20% to 80% dendritic cells and is largely free of lymphocytes [@nair2012isolation; @tedder1997isolation].
+Another method is to isolate adherent monocytes (described above) and incubate with TNF-α, GM-CSF, and IL-4 for 5-7 days.
+The differentiation process occurs withouT-cell proliferation, making the quantity of monocytes a critical factor for dendritic cell recovery.
+As monocytes are more abundant than dendritic cells, this approach can lead to higher yields compared to the previous protocol [@zhou1996cd14].
+Highly purified dendritic cell preparations can be obtained from these populations by a process known as magnetic-activated cell sorting (MACS).
+In this protocol mononuclear cells are incubated with a mix of anti-CD3, -CD14, -CD19, and -CD56 monoclonal antibodies conjugated with magnetic beads.
+Using a magnetic separation apparatus lymphocytes, monocytes, and NK cells are depleted and the resulting cell suspension is incubated overnight in RPMI1640 media at 37°C on tissue-culture plates.
+The non-adherent T-cells are gently removed and incubated with anti-CD83 antibody conjugated to magnetic beads.
+The resulting CD83 positive population contains highly enriched population of DCs for various downstream applications [@nair2012isolation; @tedder1997isolation].
 
 ![An illustraion showing dendritic cells presenting antigens to both MHC Class-I (A) and -II (B) molecules on T-cells.](images/fig_2.png){#fig-dc-present}
 
 ### Maturation of dendritic cells
 
-DC maturation is a crucial step that should ideally precede vaccination. However, there is currently no consensus on the most suitable methods to generate robust immunostimulatory DCs. Various combinations of maturation stimuli have been explored, including proinflammatory cytokines, CD40L/ CD154), and Toll-like receptor agonists [@sabado2010directing; @amedei2011novel; @nicolette2007dendritic]. The utilization of Toll-like receptor agonists leads to elevated IL-12 levels, resulting in a potent activation of DCs and subsequent effective immune activation. The maturation process is pivotal for efficient vaccine production because mature DCs generally exhibit enhanced expression of co-stimulatory molecules and increased production of cytokines and chemokines. In contrast, immature DCs lack the ability to induce antigen-specific responses and may potentially foster the differentiation of regulatory T-cells.
+DC maturation is a crucial step that should ideally precede vaccination.
+However, there is currently no consensus on the most suitable methods to generate robust immunostimulatory DCs.
+Various combinations of maturation stimuli have been explored, including proinflammatory cytokines, CD40L/ CD154), and Toll-like receptor agonists [@sabado2010directing; @amedei2011novel; @nicolette2007dendritic].
+The utilization of Toll-like receptor agonists leads to elevated IL-12 levels, resulting in a potent activation of DCs and subsequent effective immune activation.
+The maturation process is pivotal for efficient vaccine production because mature DCs generally exhibit enhanced expression of co-stimulatory molecules and increased production of cytokines and chemokines.
+In contrast, immature DCs lack the ability to induce antigen-specific responses and may potentially foster the differentiation of regulatory T-cells.
 
 ### Optimization of dendritic cell yield
 
-In order to increase DC yield it is crucial to start with large volume of human blood mononuclear cells. Small blood volumes are inadequate for dendritic cell isolation. When dealing with limited blood volumes it is recommended to generate dendritic cells from monocytes. Freshly isolated mononuclear cells are ideal, but satisfactory results can be achieved using 24 hour old blood preparations stored on ice. Leukocyte-enriched 'leukopaks' obtained within the last 24 hours can provide a significant number of mononuclear cells, typically ranging from 2 - 12 × 10^8^ cells per leukopak. Alternatively, 'buffy coats' from donated blood units can be used. Care must be taken with isolation procedures, as it may affect neutrophils within leukopaks, making it difficult to remove neutrophils which eventually will impact DC purity. A critical step of DC isolation is the removal of non-adherent T-cells. The tissue culture plate must be washed throughly with warm media using a pipette with sufficient force to remove non-adherent T-cells. The cell morphology can be roughly assessed through phase-contrast microscopy. DCs are large and irregular shaped with long membrane processes and can be easily identified (@fig-dc). For higher dendritic cell purity, two metrizamide density gradient centrifugation steps can be performed. Contaminating B lymphocytes and monocytes can be further depleted through adherence to Ig-coated plates. Lineage-associated monoclonal antibodies (mAbs) can also be employed for depletion using magnetic beads or panning. Depleting contaminating cells through Fc receptor-mediated procedures is effective but may limit dendritic cell heterogeneity, considering dendritic cells express CD32 and CD64 F~C~ receptors [@fanger1996type].
+In order to increase DC yield it is crucial to start with large volume of human blood mononuclear cells.
+Small blood volumes are inadequate for dendritic cell isolation.
+When dealing with limited blood volumes it is recommended to generate dendritic cells from monocytes.
+Freshly isolated mononuclear cells are ideal, but satisfactory results can be achieved using 24 hour old blood preparations stored on ice.
+Leukocyte-enriched 'leukopaks' obtained within the last 24 hours can provide a significant number of mononuclear cells, typically ranging from 2 - 12 × 10^8^ cells per leukopak.
+Alternatively, 'buffy coats' from donated blood units can be used.
+Care must be taken with isolation procedures, as it may affect neutrophils within leukopaks, making it difficult to remove neutrophils which eventually will impact DC purity.
+A critical step of DC isolation is the removal of non-adherent T-cells.
+The tissue culture plate must be washed throughly with warm media using a pipette with sufficient force to remove non-adherent T-cells.
+The cell morphology can be roughly assessed through phase-contrast microscopy.
+DCs are large and irregular shaped with long membrane processes and can be easily identified (@fig-dc).
+For higher dendritic cell purity, two metrizamide density gradient centrifugation steps can be performed.
+Contaminating B lymphocytes and monocytes can be further depleted through adherence to Ig-coated plates.
+Lineage-associated monoclonal antibodies (mAbs) can also be employed for depletion using magnetic beads or panning.
+Depleting contaminating cells through F~C~ receptor-mediated procedures is effective but may limit dendritic cell heterogeneity, considering dendritic cells express CD32 and CD64 F~C~ receptors [@fanger1996type].
 
 ## Antigen Loading onto Dendritic Cells
 
 ### Techniques for Loading Antigens onto Dendritic Cells
 
-Loading DCs with peptides, tumor cells, or intact proteins represents the most common method, typically conducted prior to maturation (@fig-dc-loading). In this approach, peptides are directly loaded on either MHC-I or MHC-II molecules on the surface of the DCs. Conversely, tumor cells or intact proteins need to be processed and presented by the DCs to activate CD4^+^ and CD8^+^ T-cells. The primary drawback associated with peptide usage is the requirement to identify the patient's haplotype and the specific peptides that would bind to these particular haplotypes. Contrastingly, utilizing tumor cells or intact proteins is advantageous as it is not restricted to particular haplotypes [@sabado2010directing; @o2005generation; @schnurr2005tumor].
+Loading DCs with peptides, tumor cells, or intact proteins represents the most common method, typically conducted prior to maturation (@fig-dc-loading).
+In this approach, peptides are directly loaded on either MHC-I or MHC-II molecules on the surface of the DCs.
+Conversely, tumor cells or intact proteins need to be processed and presented by the DCs to activate CD4^+^ and CD8^+^ T-cells.
+The primary drawback associated with peptide usage is the requirement to identify the patient's haplotype and the specific peptides that would bind to these particular haplotypes.
+Contrastingly, utilizing tumor cells or intact proteins is advantageous as it is not restricted to particular haplotypes [@sabado2010directing; @o2005generation; @schnurr2005tumor].
 
 ![Distinct DC vaccine loading approaches have been tested in clinical trials: loading of DCs with peptides, proteins, and tumor lysates; mRNA transfection; and delivery of DNA and the use of viral vectors.](images/ag_loading.png){#fig-dc-loading}
 
-The use of viral vectors presents an appealing alternative for loading antigenic material onto dendritic cells (DCs), as it enables gene insertion encoding tumor antigens or intact proteins, while allowing for the removal of virulence or replication factor genes. In some instances, the vector itself may promote DC maturation, eliminating the need for an additional maturation process. Another advantage lies in the ability to incorporate genes encoding co-stimulatory cytokines, thereby enhancing DC immunogenicity. However, the existence of pre-existing immunity against the viral vector might diminish the patients' capacity to induce *in vivo* responses, that maks safety a major concern. Lentivirus-based vectors has been shown to be significantly less immunogenic due to the removal of the viral protein encoding genes. Additionally, lentivirus-based vectors offer specific advantages, including the potential to activate the innate immune system through cytoplasmic or endosomal molecules such as TLRs, RIG-I, and PKR [@sabado2010directing; @schroers2000transduction; @dyall2001lentivirus; @lizee2004lentivirus; @yang2008engineered].
+The use of viral vectors presents an appealing alternative for loading antigenic material onto dendritic cells (DCs), as it enables gene insertion encoding tumor antigens or intact proteins, while allowing for the removal of virulence or replication factor genes.
+In some instances, the vector itself may promote DC maturation, eliminating the need for an additional maturation process.
+Another advantage lies in the ability to incorporate genes encoding co-stimulatory cytokines, thereby enhancing DC immunogenicity.
+However, the existence of pre-existing immunity against the viral vector might diminish the patients' capacity to induce *in vivo* responses, that maks safety a major concern.
+Lentivirus-based vectors has been shown to be significantly less immunogenic due to the removal of the viral protein encoding genes.
+Additionally, lentivirus-based vectors offer specific advantages, including the potential to activate the innate immune system through cytoplasmic or endosomal molecules such as TLRs, RIG-I, and PKR [@sabado2010directing; @schroers2000transduction; @dyall2001lentivirus; @lizee2004lentivirus; @yang2008engineered].
 
-An alternative and appealing approach involves loading DCs with messenger RNA (mRNA) which encodes tumor-associated antigens (TAAs), a method proven to elicit CD4^+^ and CD8^+^ T-cell responses. These mRNAs, characterized by a short half-life and not integrated into the host genome, can be directly loaded onto DCs without the need for viral vectors or knowledge of the patient's haplotypes [@van2012optimizing; @sabado2010directing]. Furthermore, mRNA transfection allows for the presentation of several antigenic epitopes, along with loading options involving maturation stimuli (such as CD40L) or cytokines. Electroporation has been identified as the most efficient method for introducing mRNA into DCs without the requirement for additional reagents [@sabado2010directing; @nair2002induction; @gilboa2004cancer; @heiser2001human].
+An alternative and appealing approach involves loading DCs with messenger RNA (mRNA) which encodes tumor-associated antigens (TAAs), a method proven to elicit CD4^+^ and CD8^+^ T-cell responses.
+These mRNAs, characterized by a short half-life and not integrated into the host genome, can be directly loaded onto DCs without the need for viral vectors or knowledge of the patient's haplotypes [@van2012optimizing; @sabado2010directing].
+Furthermore, mRNA transfection allows for the presentation of several antigenic epitopes, along with loading options involving maturation stimuli (such as CD40L) or cytokines.
+Electroporation has been identified as the most efficient method for introducing mRNA into DCs without the requirement for additional reagents [@sabado2010directing; @nair2002induction; @gilboa2004cancer; @heiser2001human].
 
 ### Enhancing Antigen Presentation Efficiency
 
-Dendritic cells (DCs), acting as vigilant sentinels in tissues, continuously survey their local environment, capturing antigens for presentation to CD4^+^ T~H~cells or CD8^+^ T~C~cells on MHC-I or MHC-II molecules, respectively [@doyle1987interaction; @engleman1981activation]. The uptake of exogenous antigen is accomplished through various mechanisms, including phagocytosis [@reis1993phagocytosis; @hoffmann2012autonomous], receptor-mediated endocytosis [@garrett2000developmental; @platt2010mature; @bonifaz2004vivo], or micropinocytosis [@sallusto1995dendritic; @norbury1997constitutive], depending on the DC subtype and activation state [@garrett2000developmental]. For instance, Langerhans cells (LC) and CX3CR1^+^ macrophages at barrier sites like the intestinal epithelium [@niess2005cx3cr1; @rescigno2001dendritic] utilize dendritic projections to sample antigens. Dermal cDC2 can access epicutaneously applied antigen through hair follicles [@tordesillas2018pdl2x]. Following antigen uptake, human LC migrate through the dermis and then to skin-draining lymph nodes (skin-dLNs) in a CXCR4-dependent manner, subsequently transferring antigen-MHC-II complexes to dermal cDC through direct contact or indirectly within the dermis [@yao2018langerhans]. This transfer mechanism potentially enhances the efficiency of antigen transport to the LN, as dermal cDCs migrate faster and disperse more widely within the LN than LCs.
+Dendritic cells (DCs), acting as vigilant sentinels in tissues, continuously survey their local environment, capturing antigens for presentation to CD4^+^ T~H~cells or CD8^+^ T~C~cells on MHC-I or MHC-II molecules, respectively [@doyle1987interaction; @engleman1981activation].
+The uptake of exogenous antigen is accomplished through various mechanisms, including phagocytosis [@reis1993phagocytosis; @hoffmann2012autonomous], receptor-mediated endocytosis [@garrett2000developmental; @platt2010mature; @bonifaz2004vivo], or micropinocytosis [@sallusto1995dendritic; @norbury1997constitutive], depending on the DC subtype and activation state [@garrett2000developmental].
+For instance, Langerhans cells (LC) and CX3CR1^+^ macrophages at barrier sites like the intestinal epithelium [@niess2005cx3cr1; @rescigno2001dendritic] utilize dendritic projections to sample antigens.
+Dermal cDC2 can access epicutaneously applied antigen through hair follicles [@tordesillas2018pdl2x].
+Following antigen uptake, human LC migrate through the dermis and then to skin-draining lymph nodes (skin-dLNs) in a CXCR4-dependent manner, subsequently transferring antigen-MHC-II complexes to dermal cDC through direct contact or indirectly within the dermis [@yao2018langerhans].
+This transfer mechanism potentially enhances the efficiency of antigen transport to the LN, as dermal cDCs migrate faster and disperse more widely within the LN than LCs.
 
-cDC2, with a notable proficiency for antigen uptake in the skin, constitute the majority of antigen-positive cells in skin-dLNs following the administration of particulate antigen [@deckers2017epicutaneous; @gerner2015strategically]. They also play a crucial role in capturing tumor antigens and transporting them to LNs for T-cell presentation [@binnewies2019unleashing]. Soluble and particulate antigens below 70 kDa can reach LNs without active cellular transport, relying on a conduit network [@sixt2005conduit; @gretz2000lymph]. Nevertheless, cDC2 show a higher capacity for the uptake of soluble antigen per cell and are overrepresented among antigen-positive cells in various settings, indicating an intrinsic capability for exogenous antigen uptake [@gerner2017dendritic; @gilfillan2018clec9ax]. Their optimal positioning within tissues, especially in proximity to lymph-borne antigens near the subcapsular sinus in LNs, further supports their efficient antigen capture [@gerner2015strategically; @gerner2017dendritic].
+cDC2, with a notable proficiency for antigen uptake in the skin, constitute the majority of antigen-positive cells in skin-dLNs following the administration of particulate antigen [@deckers2017epicutaneous; @gerner2015strategically].
+They also play a crucial role in capturing tumor antigens and transporting them to LNs for T-cell presentation [@binnewies2019unleashing].
+Soluble and particulate antigens below 70 kDa can reach LNs without active cellular transport, relying on a conduit network [@sixt2005conduit; @gretz2000lymph].
+Nevertheless, cDC2 show a higher capacity for the uptake of soluble antigen per cell and are overrepresented among antigen-positive cells in various settings, indicating an intrinsic capability for exogenous antigen uptake [@gerner2017dendritic; @gilfillan2018clec9ax].
+Their optimal positioning within tissues, especially in proximity to lymph-borne antigens near the subcapsular sinus in LNs, further supports their efficient antigen capture [@gerner2015strategically; @gerner2017dendritic].
 
-In contrast, cDC1, situated deep within the LN paracortex [@gerner2017dendritic], excel at capturing cell-associated antigens and dead cells through specific receptors like Clec9A, DEC205, Axl, and TIM3 [@gutierrez2015cross]. This subtype predominantly processes cell-associated antigens via cross-presentation on MHC-I, crucial for antiviral and antitumor immunity [@gutierrez2015cross]. Monoclonal antibodies targeting receptors such as CLEC9a and DEC205 have successfully enhanced antigen uptake and cross-presentation in vaccination contexts [@dudziak2007differential; @lehmann2017dc; @caminschi2008dendritic]. Additionally, both monocyte-derived DCs (moDC) and cDC2 can engage in cross-presentation, indicating a degree of redundancy in this pathway, particularly notable in humans [@den2002constitutive; @ballesteros2010temporal; @baker2011neonatal].
+In contrast, cDC1, situated deep within the LN paracortex [@gerner2017dendritic], excel at capturing cell-associated antigens and dead cells through specific receptors like Clec9A, DEC205, Axl, and TIM3 [@gutierrez2015cross].
+This subtype predominantly processes cell-associated antigens via cross-presentation on MHC-I, crucial for antiviral and antitumor immunity [@gutierrez2015cross].
+Monoclonal antibodies targeting receptors such as CLEC9a and DEC205 have successfully enhanced antigen uptake and cross-presentation in vaccination contexts [@dudziak2007differential; @lehmann2017dc; @caminschi2008dendritic].
+Additionally, both monocyte-derived DCs (moDC) and cDC2 can engage in cross-presentation, indicating a degree of redundancy in this pathway, particularly notable in humans [@den2002constitutive; @ballesteros2010temporal; @baker2011neonatal].
 
-DCs constitute the primary population of antigen-presenting cells *in vivo*, playing a crucial role in initiating antigen-specific activation and expansion of naive CD4^+^ T-cells through interactions involving peptide–MHC-II binding with the TCR and co-stimulatory signaling [@dudziak2007differential; @vander2014transcriptional]. Among DC subtypes, cDC2 stands out for its remarkable efficiency in processing exogenous antigens for presentation on MHC-II, resulting in superior CD4^+^ T-cell proliferation compared to cDC1. This specialization is believed to be influenced by the expression of Irf4 in cDC2, as IRF4 has been linked to enhanced peptide–MHC-II complex formation in these cells [@vander2014transcriptional].
+DCs constitute the primary population of antigen-presenting cells *in vivo*, playing a crucial role in initiating antigen-specific activation and expansion of naive CD4^+^ T-cells through interactions involving peptide–MHC-II binding with the TCR and co-stimulatory signaling [@dudziak2007differential; @vander2014transcriptional].
+Among DC subtypes, cDC2 stands out for its remarkable efficiency in processing exogenous antigens for presentation on MHC-II, resulting in superior CD4^+^ T-cell proliferation compared to cDC1.
+This specialization is believed to be influenced by the expression of Irf4 in cDC2, as IRF4 has been linked to enhanced peptide–MHC-II complex formation in these cells [@vander2014transcriptional].
 
-Beyond facilitating CD4^+^ T-cell activation and proliferation, the communication between DCs and CD4^+^ T-cells during antigen presentation plays a crucial role in determining the differentiation fate of T helper (T~H~) cells. Several factors, including the strength and duration of co-stimulatory signals and interactions between peptide-MHC-II and TCR, are implicated in regulating the T~H~ cell differentiation program [@van2016tcr].
+Beyond facilitating CD4^+^ T-cell activation and proliferation, the communication between DCs and CD4^+^ T-cells during antigen presentation plays a crucial role in determining the differentiation fate of T helper (T~H~) cells.
+Several factors, including the strength and duration of co-stimulatory signals and interactions between peptide-MHC-II and TCR, are implicated in regulating the T~H~ cell differentiation program [@van2016tcr].
 
 ## Strategies for Dendritic Cell Activation
 
 ### Use of Adjuvants in Dendritic Cell Activation
 
-An effective adjuvant should be designed to specifically target DCs to enhance antigen presentation and activate immune responses. DCs, a type of white blood cell, are highly proficient in capturing, processing, and presenting antigens to T-cells. When appropriately activated, DCs engage with CD4^+^ T lymphocytes through surface receptors like MHC-II, CD80, and/or CD86, and they release cytokines such as IL-12, initiating T-cell activation.
+An effective adjuvant should be designed to specifically target DCs to enhance antigen presentation and activate immune responses.
+DCs, a type of white blood cell, are highly proficient in capturing, processing, and presenting antigens to T-cells.
+When appropriately activated, DCs engage with CD4^+^ T lymphocytes through surface receptors like MHC-II, CD80, and/or CD86, and they release cytokines such as IL-12, initiating T-cell activation.
 
-In mice, DCs are identified by the expression of CD11c and can be categorized into broad populations based on CD8a and CD4 expression, resulting in CD8a^+^, CD4^+^, and double-negative (DN) DCs (CD8a^-^CD4^-^) subsets [@mclellan2002anatomic; @vremec2000cd4]. Conversely, in humans, DC subpopulations are not differentiated by CD4 and CD8 expression. DCs also express pattern recognition molecules, specifically Toll-like receptors (TLRs), that act as activation signals. The TLR family comprises 11 members (TLR1–11) that recognize several PAMPs [@takeda2003toll], inducing the maturation and migration of DCs to lymph nodes which in turn promote immune responses. While TLR2 and TLR4 mRNAs are present in all murine DC subsets [@edwards2003toll], the expression of TLR9 protein have also been demonstrated [@boonstra2003flexibility; @boonstra2006macrophages]. TLR2 is notable for recognizing a broad range of lipid ligands derived from different microbe types, including bacteria. It forms heterodimers with either TLR6 or TLR1 for recognizing di- acylated or tri-acylated lipids, respectively. However, it is suggested that TLR2 may also function as homodimers for signaling, as seen in the recognition of synthetic lipopeptides.
+In mice, DCs are identified by the expression of CD11c and can be categorized into broad populations based on CD8a and CD4 expression, resulting in CD8a^+^, CD4^+^, and double-negative (DN) DCs (CD8a^-^CD4^-^) subsets [@mclellan2002anatomic; @vremec2000cd4].
+Conversely, in humans, DC subpopulations are not differentiated by CD4 and CD8 expression.
+DCs also express pattern recognition molecules, specifically Toll-like receptors (TLRs), that act as activation signals.
+The TLR family comprises 11 members (TLR1–11) that recognize several PAMPs [@takeda2003toll], inducing the maturation and migration of DCs to lymph nodes which in turn promote immune responses.
+While TLR2 and TLR4 mRNAs are present in all murine DC subsets [@edwards2003toll], the expression of TLR9 protein have also been demonstrated [@boonstra2003flexibility; @boonstra2006macrophages].
+TLR2 is notable for recognizing a broad range of lipid ligands derived from different microbe types, including bacteria.
+It forms heterodimers with either TLR6 or TLR1 for recognizing di- acylated or tri-acylated lipids, respectively.
+However, it is suggested that TLR2 may also function as homodimers for signaling, as seen in the recognition of synthetic lipopeptides.
 
 ### Cytokine-Based Activation Methods
 
-A novel approach to antigen loading involves the direct antigen targeting to dendritic cells (DCs) *in vivo*, aiming to promote anti-tumorigenic immune responses [@shortman2009improving, @tacken2006targeting]. This strategy presents a promising option for DC immunotherapy, bypassing the costly and labor-intensive *ex vivo* DC generation process. It allows to produce vaccines on a larger scale, eliminating the need for customized vaccines for each patient.
+A novel approach to antigen loading involves the direct antigen targeting to dendritic cells (DCs) *in vivo*, aiming to promote anti-tumorigenic immune responses [@shortman2009improving, @tacken2006targeting].
+This strategy presents a promising option for DC immunotherapy, bypassing the costly and labor-intensive *ex vivo* DC generation process.
+It allows to produce vaccines on a larger scale, eliminating the need for customized vaccines for each patient.
 
-Early methods for *in vivo* DC targeting included engineering irradiated tumor cells to secrete granulocyte-macrophage colony-stimulating factor (GM-CSF) [@jinushi2009cytokine]. GM-CSF was employed to recruit and promote the function of antigen-presenting cells (APCs). The strategies employed included the use of autologous tumor cells modified to produce GM-CSF via gene transfer mediated by retroviruses or adenoviruses, allogeneic tumor cell lines that had been genetically altered to continuously produce GM-CSF, or a combination of autologous tumor cells with cell lines that secrete GM-CSF. Clinical studies utilizing these techniques have shown they can attract dendritic cells, granulocytes, macrophages, and T-cells to the site of vaccination. Typically, patients exhibited delayed-type hypersensitivity responses that involved CD4^+^ and CD8^+^ T-cells, eosinophils, and macrophages following the vaccinations [@luiten2005immunogenicity; @small2007granulocyte; @higano2008phase]. Examination of tumor samples from individuals who received the vaccine showed significant tumor cell death and infiltration by cytotoxic CD4^+^ and CD8^+^ T-cells and plasma cells, which produced strong cytokine responses upon reactivation, demonstrating the effective generation of immune responses specific to the tumor.
+Early methods for *in vivo* DC targeting included engineering irradiated tumor cells to secrete granulocyte-macrophage colony-stimulating factor (GM-CSF) [@jinushi2009cytokine].
+GM-CSF was employed to recruit and promote the function of antigen-presenting cells (APCs).
+The strategies employed included the use of autologous tumor cells modified to produce GM-CSF via gene transfer mediated by retroviruses or adenoviruses, allogeneic tumor cell lines that had been genetically altered to continuously produce GM-CSF, or a combination of autologous tumor cells with cell lines that secrete GM-CSF.
+Clinical studies utilizing these techniques have shown they can attract dendritic cells, granulocytes, macrophages, and T-cells to the site of vaccination.
+Typically, patients exhibited delayed-type hypersensitivity responses that involved CD4^+^ and CD8^+^ T-cells, eosinophils, and macrophages following the vaccinations [@luiten2005immunogenicity; @small2007granulocyte; @higano2008phase].
+Examination of tumor samples from individuals who received the vaccine showed significant tumor cell death and infiltration by cytotoxic CD4^+^ and CD8^+^ T-cells and plasma cells, which produced strong cytokine responses upon reactivation, demonstrating the effective generation of immune responses specific to the tumor.
 
-Extended GM-CSF production within the tumor environment is linked to disease progression in some experimental conditions, including a Phase III study that tested the immunization with irradiated GM-CSF-producing allogeneic prostate cancer cells in patients with metastatic disease resistant to hormone therapy [@jinushi2009cytokine]. This advancement could be due to the immune system becoming tolerant because of long-term administration of GM-CSF, which could lead to the recruitment of myeloid suppressor cells or cause myeloid precursors to develop into immature, tolerogenic dendritic cells [@filipazzi2007identification; @sica2007altered].
+Extended GM-CSF production within the tumor environment is linked to disease progression in some experimental conditions, including a Phase III study that tested the immunization with irradiated GM-CSF-producing allogeneic prostate cancer cells in patients with metastatic disease resistant to hormone therapy [@jinushi2009cytokine].
+This advancement could be due to the immune system becoming tolerant because of long-term administration of GM-CSF, which could lead to the recruitment of myeloid suppressor cells or cause myeloid precursors to develop into immature, tolerogenic dendritic cells [@filipazzi2007identification; @sica2007altered].
 
-Newer strategies are being developed that aim at dendritic cell-specific molecules, such as Fc receptors, CD40, and C-type lectin receptors (CLRs). CLRs are of particular interest because they are expressed differently across DC subsets and include DEC205, DC-SIGN, mannose receptor (MR), and Dectin-1. These receptors play a crucial role in the identification and capture of glycosylated self-antigens and pathogens for antigen presentation, as well as in the movement of DCs, interactions between DCs and T-cells, and the activation of subsequent immune responses [@sica2007altered]. Initial experiments that targeted antigens to DCIR2 and DEC205 found that without activating signals for DCs, immune tolerance was induced, while the simultaneous administration of DC-activating signals was required to trigger immune responses [@bonifaz2004vivo]. Later experiments that targeted antigens to various CLRs along with a DC-activating signal were successful in eliciting strong CD4^+^ and CD8^+^ T-cell responses [@caminschi2008dendritic; @carter2006preferential]. Additionally, directing antigens towards CLRs has been shown to improve antibody responses [@boscardin2006antigen]. While most of this research has been conducted in mice, there are emerging studies in humans focusing on MR [@ramakrishna2004mannose] and DC-SIGN [@tacken2005effective], showing promising results in the activation of naive and memory tumor-specific T-cell responses. Nevertheless, further research is necessary to adapt this promising approach for clinical use in humans.
+Newer strategies are being developed that aim at dendritic cell-specific molecules, such as Fc receptors, CD40, and C-type lectin receptors (CLRs).
+CLRs are of particular interest because they are expressed differently across DC subsets and include DEC205, DC-SIGN, mannose receptor (MR), and Dectin-1.
+These receptors play a crucial role in the identification and capture of glycosylated self-antigens and pathogens for antigen presentation, as well as in the movement of DCs, interactions between DCs and T-cells, and the activation of subsequent immune responses [@sica2007altered].
+Initial experiments that targeted antigens to DCIR2 and DEC205 found that without activating signals for DCs, immune tolerance was induced, while the simultaneous administration of DC-activating signals was required to trigger immune responses [@bonifaz2004vivo].
+Later experiments that targeted antigens to various CLRs along with a DC-activating signal were successful in eliciting strong CD4^+^ and CD8^+^ T-cell responses [@caminschi2008dendritic; @carter2006preferential].
+Additionally, directing antigens towards CLRs has been shown to improve antibody responses [@boscardin2006antigen].
+While most of this research has been conducted in mice, there are emerging studies in humans focusing on MR [@ramakrishna2004mannose] and DC-SIGN [@tacken2005effective], showing promising results in the activation of naive and memory tumor-specific T-cell responses.
+Nevertheless, further research is necessary to adapt this promising approach for clinical use in humans.
 
 ### Genetic Modification for Enhanced Functionality
 
-Although there is knowledge about signals for dendritic cell (DC) maturation and activation, the optimal signal to activate T-cells *in vivo* remain unclear. Current clinical trials of cancer immunotherapy use DCs from various sources, including those isolated directly from unmobilized or Flt3 ligand-mobilized peripheral blood, or generated *in vitro* from CD34^+^ progenitors, CD14^+^ monocytes, or adherent peripheral blood mononuclear cells. Immature DCs are loaded with antigens in various forms, such as peptides, proteins, tumor lysates, apoptotic bodies, or tumor cell fusions (@fig-dc-loading). Gene transfer through DNA or messenger RNA encoding the antigen has also been investigated for antigen loading and processing. These loaded DCs may undergo further processing by maturation with second signals like tumor necrosis factor-α, CD40 ligand, or monocyte-conditioned media before administration to patients via different routes, such as intravenous, intradermal, subcutaneous, or direct intralymphatic or intranodal injection.
+Although there is knowledge about signals for dendritic cell (DC) maturation and activation, the optimal signal to activate T-cells *in vivo* remain unclear.
+Current clinical trials of cancer immunotherapy use DCs from various sources, including those isolated directly from unmobilized or Flt3 ligand-mobilized peripheral blood, or generated *in vitro* from CD34^+^ progenitors, CD14^+^ monocytes, or adherent peripheral blood mononuclear cells.
+Immature DCs are loaded with antigens in various forms, such as peptides, proteins, tumor lysates, apoptotic bodies, or tumor cell fusions (@fig-dc-loading).
+Gene transfer through DNA or messenger RNA encoding the antigen has also been investigated for antigen loading and processing.
+These loaded DCs may undergo further processing by maturation with second signals like tumor necrosis factor-α, CD40 ligand, or monocyte-conditioned media before administration to patients via different routes, such as intravenous, intradermal, subcutaneous, or direct intralymphatic or intranodal injection.
 
-Mature DCs within secondary lymphoid organs express high levels of costimulatory molecules, facilitating antigen presentation. However, several issues persist regarding gene modification of DCs. These include questions about uniform maturation, persistence of molecule expression, the potential for enhanced function with higher levels of expression, and the broader impact of genetic modification on DC function. Studies suggest that using exogenous expression systems like viral vectors engineered to express crucial molecules can optimize the delivery and processing of antigens. One study demonstrates the effectiveness of their strategy for modifying DCs and improving their *in vitro* performance [@hodge2000enhanced]. However, uncertainties remain, including the optimal strategy for gene expression or repression, concerns about the viral vector system's potential impact on DC functions, and questions about the efficiency of migration for matured DCs and whether fully matured DCs should be administered directly or matured *in vivo*. Despite these uncertainties, Hodge et al.'s experiments show that DC function can be manipulated through genetic modification, paving the way for further exploration of their biologic activity and role in eliciting authentic antitumor responses in patients.
+Mature DCs within secondary lymphoid organs express high levels of costimulatory molecules, facilitating antigen presentation.
+However, several issues persist regarding gene modification of DCs.
+These include questions about uniform maturation, persistence of molecule expression, the potential for enhanced function with higher levels of expression, and the broader impact of genetic modification on DC function.
+Studies suggest that using exogenous expression systems like viral vectors engineered to express crucial molecules can optimize the delivery and processing of antigens.
+One study demonstrates the effectiveness of their strategy for modifying DCs and improving their *in vitro* performance [@hodge2000enhanced].
+However, uncertainties remain, including the optimal strategy for gene expression or repression, concerns about the viral vector system's potential impact on DC functions, and questions about the efficiency of migration for matured DCs and whether fully matured DCs should be administered directly or matured *in vivo*.
+Despite these uncertainties, Hodge et al.'s experiments show that DC function can be manipulated through genetic modification, paving the way for further exploration of their biologic activity and role in eliciting authentic antitumor responses in patients.
 
 ## Dendritic Cell Vaccines Design
 
-In recent years, there has been clinical promise in reprogramming the immune system against cancer. Dendritic cells (DCs) emerge as a compelling target for immunotherapy due to their capacity to capture and present tumor-associated antigens (TAAs) through various mechanisms, thereby initiating robust effector responses against the tumor [@steinman2002avoiding; @de2003maturation; @jonuleit2001comparison]. Beyond direct antigen presentation, other intrinsic properties of DCs play a crucial role in immunotherapy. These include their ability to migrate between lymphoid and non-lymphoid tissues, regulate cytokine and chemokine gradients, and control inflammation which are essential for achieving systemic and enduring anti-tumor effects. Personalized vaccines involving patient-derived DCs manipulated *ex vivo* have been extensively investigated to harness these features. Typically, these therapies are developed by isolating hematopoietic stem and progenitor cells or monocytes from peripheral blood. These cells undergo treatment with recombinant cytokines to induce differentiation, are stimulated for maturation, and are loaded with TAAs in various forms. This comprehensive process has been employed in numerous preclinical and clinical studies [@mastelic2019personalized].
+In recent years, there has been clinical promise in reprogramming the immune system against cancer.
+Dendritic cells (DCs) emerge as a compelling target for immunotherapy due to their capacity to capture and present tumor-associated antigens (TAAs) through various mechanisms, thereby initiating robust effector responses against the tumor [@steinman2002avoiding; @de2003maturation; @jonuleit2001comparison].
+Beyond direct antigen presentation, other intrinsic properties of DCs play a crucial role in immunotherapy.
+These include their ability to migrate between lymphoid and non-lymphoid tissues, regulate cytokine and chemokine gradients, and control inflammation which are essential for achieving systemic and enduring anti-tumor effects.
+Personalized vaccines involving patient-derived DCs manipulated *ex vivo* have been extensively investigated to harness these features.
+Typically, these therapies are developed by isolating hematopoietic stem and progenitor cells or monocytes from peripheral blood.
+These cells undergo treatment with recombinant cytokines to induce differentiation, are stimulated for maturation, and are loaded with TAAs in various forms.
+This comprehensive process has been employed in numerous preclinical and clinical studies [@mastelic2019personalized].
 
 ### Design, Manufacturing and Quality Control of Dendritic Cell Vaccines
 
-The treatment landscape for various malignant diseases is evolving, with tumor vaccines gaining prominence in therapeutic strategies. The effectiveness of these innovative products is being rigorously evaluated through numerous global clinical trials (@laureano2022trial). Cell-based vaccines in the European Union must align with a specified definition. According to this definition, somatic cell therapy involves the use of autologous (patient-derived), allogeneic (from a different human subject), or xenogeneic (originating in animals) cells whose characteristics have been significantly modified @europeancommission2003. Somatic cell therapy medicinal products encompass cells that are genetically modified, unless the genetic modification is unrelated to therapeutic, diagnostic, or preventive objectives, as is the case with primary tumor cells immortalized through gene transfer @europeancommission2003.
+The treatment landscape for various malignant diseases is evolving, with tumor vaccines gaining prominence in therapeutic strategies.
+The effectiveness of these innovative products is being rigorously evaluated through numerous global clinical trials (@laureano2022trial).
+Cell-based vaccines in the European Union must align with a specified definition.
+According to this definition, somatic cell therapy involves the use of autologous (patient-derived), allogeneic (from a different human subject), or xenogeneic (originating in animals) cells whose characteristics have been significantly modified @europeancommission2003.
+Somatic cell therapy medicinal products encompass cells that are genetically modified, unless the genetic modification is unrelated to therapeutic, diagnostic, or preventive objectives, as is the case with primary tumor cells immortalized through gene transfer @europeancommission2003.
 
-Currently, tumor vaccines are not covered by the European Pharmacopoeia, and specific guidelines are lacking for both tumor and therapeutic vaccines. Good manufacturing practice (GMP) principles should me adhered to during manufacturing of cell-based tumor vaccines in the EU. The EU is also preparing guidelines for GMP inspections of gene-therapy and vaccine products (European Medicines Agency, 2021). The European Medicines Agency published a "points to consider" document on the manufacture and quality control of somatic cell therapy products, which may be subject to modification in the future to incorporate emerging technologies like tissue engineering (European Medicines Agency, 2001). This document also addresses genetic manipulation of cells and should be read alongside the guidance on the quality, preclinical, and clinical aspects of gene-transfer medicinal products, which deals with specific issues related to gene transfer methodologies involving plasmids or viruses and addresses safety concerns associated with certain gene-transfer approaches (European Medicines Agency, 2001).
+Currently, tumor vaccines are not covered by the European Pharmacopoeia, and specific guidelines are lacking for both tumor and therapeutic vaccines.
+Good manufacturing practice (GMP) principles should me adhered to during manufacturing of cell-based tumor vaccines in the EU.
+The EU is also preparing guidelines for GMP inspections of gene-therapy and vaccine products (European Medicines Agency, 2021).
+The European Medicines Agency published a "points to consider" document on the manufacture and quality control of somatic cell therapy products, which may be subject to modification in the future to incorporate emerging technologies like tissue engineering (European Medicines Agency, 2001).
+This document also addresses genetic manipulation of cells and should be read alongside the guidance on the quality, preclinical, and clinical aspects of gene-transfer medicinal products, which deals with specific issues related to gene transfer methodologies involving plasmids or viruses and addresses safety concerns associated with certain gene-transfer approaches (European Medicines Agency, 2001).
 
 ### Challenges and Limitations
 
-Dendritic cells (DCs) are typically found in an immature state in circulation and peripheral tissues. Upon receiving maturation signals, they undergo changes such as upregulation of chemokine receptors, increased surface expression of MHC molecules, and upregulation of costimulatory models. These changes facilitate their migration to lymph nodes, enhance antigen presentation, and amplify T-cell responses. The type of maturation signals determines the phenotypes of DCs, influencing their interactions with T-cells and the cytokines they secrete [@steinman1997-mc]. While DCs play a crucial role in activating the immune system, they can also induce immune tolerance, potentially hindering effective vaccine strategies. Studies have linked immature DCs to the promotion of regulatory T-cell development, contributing to peripheral self-tolerance. In some cases, immature DCs induced nonproliferative responses and IL-10 secretion, characteristic of a Treg population. The use of antigen-pulsed immature DCs has even led to antigen-specific immune suppression, inhibiting pre-existing antigen-specific T-cell function [@mellman2001-gu]. To address these challenges, vaccines need to incorporate signals that ensure full maturation and activation of DCs before administration. Attempts to exploit immature DCs to promote anergy have been made in transplantation and autoimmunity settings. However, in cancer vaccines, ensuring full maturation and appropriate activation of DCs is crucial to overcome immune tolerance barriers. Researchers have also demonstrated that inappropriately activated DCs, even with mature features, can induce T-cell tolerance. Understanding the signals that lead to tolerogenic DC states is essential for directing the choice of maturation signals and targeting factors present in the tumor microenvironment that mediate tolerance. Moreover, maturation alone may not be sufficient for immune activation, as demonstrated in studies where mature DCs led to the expansion of T~REG~ populations in myeloma patients. Confirming DC maturity and phenotype through cell-surface markers and cytokine secretion before vaccine administration is crucial for cancer vaccines to overcome the challenge of immune tolerance [@sabado2016-be].
+Dendritic cells (DCs) are typically found in an immature state in circulation and peripheral tissues.
+Upon receiving maturation signals, they undergo changes such as upregulation of chemokine receptors, increased surface expression of MHC molecules, and upregulation of costimulatory models.
+These changes facilitate their migration to lymph nodes, enhance antigen presentation, and amplify T-cell responses.
+The type of maturation signals determines the phenotypes of DCs, influencing their interactions with T-cells and the cytokines they secrete [@steinman1997-mc].
+While DCs play a crucial role in activating the immune system, they can also induce immune tolerance, potentially hindering effective vaccine strategies.
+Studies have linked immature DCs to the promotion of regulatory T-cell development, contributing to peripheral self-tolerance.
+In some cases, immature DCs induced nonproliferative responses and IL-10 secretion, characteristic of a Treg population.
+The use of antigen-pulsed immature DCs has even led to antigen-specific immune suppression, inhibiting pre-existing antigen-specific T-cell function [@mellman2001-gu].
+To address these challenges, vaccines need to incorporate signals that ensure full maturation and activation of DCs before administration.
+Attempts to exploit immature DCs to promote anergy have been made in transplantation and autoimmunity settings.
+However, in cancer vaccines, ensuring full maturation and appropriate activation of DCs is crucial to overcome immune tolerance barriers.
+Researchers have also demonstrated that inappropriately activated DCs, even with mature features, can induce T-cell tolerance.
+Understanding the signals that lead to tolerogenic DC states is essential for directing the choice of maturation signals and targeting factors present in the tumor microenvironment that mediate tolerance.
+Moreover, maturation alone may not be sufficient for immune activation, as demonstrated in studies where mature DCs led to the expansion of T~REG~ populations in myeloma patients.
+Confirming DC maturity and phenotype through cell-surface markers and cytokine secretion before vaccine administration is crucial for cancer vaccines to overcome the challenge of immune tolerance [@sabado2016-be].
 
 ## Clinical Trials and Outcomes
 
-Effective cancer vaccines can function as preventive agents against cancers linked to infectious diseases, such as hepatitis B virus or human papillomavirus, and serve as onco-therapeutic agents. The latter approach relies on the recognition of specific tumor-associated antigens (TAAs) by CD3^+^ T-cells within the host body. Vaccination can enhance the existing immune response against TAAs or induce a *de novo* response. Dendritic cells (DCs), known for their effectiveness as antigen-presenting cells (APCs), play a crucial role in both major histocompatibility complex class I (MHC-I) and II (MHC-II) presentation to CD8^+^ and CD4^+^ T-cells, respectively. Dendritic cells exhibit migratory capabilities between lymphoid and non-lymphoid tissues, modulating cytokine and chemokine gradients to regulate inflammation and lymphocyte homing.
+Effective cancer vaccines can function as preventive agents against cancers linked to infectious diseases, such as hepatitis B virus or human papillomavirus, and serve as onco-therapeutic agents.
+The latter approach relies on the recognition of specific tumor-associated antigens (TAAs) by CD3^+^ T-cells within the host body.
+Vaccination can enhance the existing immune response against TAAs or induce a *de novo* response.
+Dendritic cells (DCs), known for their effectiveness as antigen-presenting cells (APCs), play a crucial role in both major histocompatibility complex class I (MHC-I) and II (MHC-II) presentation to CD8^+^ and CD4^+^ T-cells, respectively.
+Dendritic cells exhibit migratory capabilities between lymphoid and non-lymphoid tissues, modulating cytokine and chemokine gradients to regulate inflammation and lymphocyte homing.
 
 | NCT Number | Study Status | Conditions | Combinatorial Treatment |
-|-------------|-------------|---------------|-------------------|
+|-----------------|-----------------|-----------------|----------------------|
 | [NCT05809752](https://clinicaltrials.gov/study/NCT05809752) | Recruiting | Triple Negative Breast Cancer | Single agent |
 | [NCT06435910](https://clinicaltrials.gov/study/NCT06435910) | Recruiting | Multiple Myeloma | Single agent |
 | [NCT05504707](https://clinicaltrials.gov/study/NCT05504707) | Recruiting | Triple Negative Breast Cancer | Single agent |
@@ -212,11 +464,19 @@ Effective cancer vaccines can function as preventive agents against cancers link
 
 : Overview of clinical trials registered on [clinicaltrials.gov](https://www.clinicaltrials.gov/) between January 2022 and October 2024 testing dendritic cell-based immunotherapy in cancer patients. {#tbl-clin}
 
-In ongoing clinical trials (January 2021 - October 2024), the most common cancer type being targeted are breast cancer, followed bt gliomas GBM, and trials enrolling patients with various solid tumors (@tbl-clin & @fig-clin). Sipuleucel-T, the first FDA-approved DC vaccine therapy for metastatic prostate cancer, demonstrated increased average survival but was shown to be sub-optimal with respect to tumor size reduction or halted tumor progression. Standard response evaluation criteria in solid tumors (RECIST) criteria, based on cytotoxic effects, may not be suitable for assessing outcomes in cancer immunotherapy. A novel version of RECIST has been proposed to evaluate vaccination as a valid alternate for standard cancer therapies.
+In ongoing clinical trials (January 2021 - October 2024), the most common cancer type being targeted are breast cancer, followed by gliomas (GBM), and trials enrolling patients with various solid tumors (@tbl-clin & @fig-clin).
+Sipuleucel-T, the first FDA-approved DC vaccine therapy for metastatic prostate cancer, demonstrated increased average survival but was shown to be sub-optimal with respect to tumor size reduction or halted tumor progression.
+Standard response evaluation criteria in solid tumors (RECIST) criteria, based on cytotoxic effects, may not be suitable for assessing outcomes in cancer immunotherapy.
+A novel version of RECIST has been proposed to evaluate vaccination as a valid alternate for standard cancer therapies.
 
-Current dendritic cell vaccination methods involve standard vaccination and *in vivo* targeting of dendritic cells. Standard vaccination uses antigens with an adjuvant, lacking precise targeting. *in vivo* DC targeting injects anti-DC antibodies with antigens, triggering strong immunity with an appropriate maturation stimulus. DC vaccination entails the transfer of dendritic cells that are generated *ex vivo*, loaded with TAAs and activated with pro-inflammatory cytokines before re-injection into the host.
+Current dendritic cell vaccination methods involve standard vaccination and *in vivo* targeting of dendritic cells.
+Standard vaccination uses antigens with an adjuvant, lacking precise targeting.
+*in vivo* DC targeting injects anti-DC antibodies with antigens, triggering strong immunity with an appropriate maturation stimulus.
+DC vaccination entails the transfer of dendritic cells that are generated *ex vivo*, loaded with TAAs and activated with pro-inflammatory cytokines before re-injection into the host.
 
-Despite promising *ex vivo* effects in many DC vaccines, clinical efficacy, especially in late-stage cancer, remains modest. Different routes and methodologies in preparing DCs for clinical trials contribute to variations in efficiency. Preclinical studies are underway to develop next-generation DC vaccines, aiming to enhance effectiveness by boosting immunogenicity through different maturation cocktails and improving effector T lymphocyte function.
+Despite promising *ex vivo* effects in many DC vaccines, clinical efficacy, especially in late-stage cancer, remains modest.
+Different routes and methodologies in preparing DCs for clinical trials contribute to variations in efficiency.
+Preclinical studies are underway to develop next-generation DC vaccines, aiming to enhance effectiveness by boosting immunogenicity through different maturation cocktails and improving effector T lymphocyte function.
 
 ![Overview of completed (A & B) and ongoing (C & D) clinical trials of dendritic cell vaccination for therapy in cancer and other dieseases.](images/clin_trials.png){#fig-clin}
 
@@ -224,29 +484,67 @@ Despite promising *ex vivo* effects in many DC vaccines, clinical efficacy, espe
 
 ### Synergy with Other Immunotherapeutic Approaches
 
-Cytotoxic treatments can exert various positive effects on the immune system, ranging from the simple release of tumor antigens due to cancer cell lysis to more complex immunological impacts. The release of tumor antigens enhances the uptake and presentation of a diverse array of antigens, promoting T-cell activation. The immunological effects induced by cytotoxic actions involve the increased expression of immuno-stimulatory molecules (for e.g., DAMPs), heightened tumor antigen expression, decreased proliferation of suppressor cells, and promote proliferation and activation of cytotoxic T lymphocytes (CTLs) [@sallusto1995dendritic]. In a clinical example, 26 patients with different types of advanced and treatment-refractory cancers underwent combined therapy involving radiation, immature dendritic cells, keyhole limpet hemocyanin, and T-cells. The initial treatment successfully eliminated metastatic and recurrent tumors in 21 out of 26 patients, with half of them exhibiting a complete response and no evidence of disease recurrence. These encouraging outcomes provide impetus for further exploration of research into combining conventional therapies with DC-based anti-tumor immunotherapy [@boonstra2003flexibility]. Additionally, low doses of cyclophosphamide and paclitaxel have been demonstrated to stimulate DC maturation. As a result, these agents are employed in combination with DC vaccines to enhance their efficacy [@boonstra2006macrophages, @shortman2009improving].
+Cytotoxic treatments can exert various positive effects on the immune system, ranging from the simple release of tumor antigens due to cancer cell lysis to more complex immunological impacts.
+The release of tumor antigens enhances the uptake and presentation of a diverse array of antigens, promoting T-cell activation.
+The immunological effects induced by cytotoxic actions involve the increased expression of immuno-stimulatory molecules (for e.g., DAMPs), heightened tumor antigen expression, decreased proliferation of suppressor cells, and promote proliferation and activation of cytotoxic T lymphocytes (CTLs) [@sallusto1995dendritic].
+In a clinical example, 26 patients with different types of advanced and treatment-refractory cancers underwent combined therapy involving radiation, immature dendritic cells, keyhole limpet hemocyanin, and T-cells.
+The initial treatment successfully eliminated metastatic and recurrent tumors in 21 out of 26 patients, with half of them exhibiting a complete response and no evidence of disease recurrence.
+These encouraging outcomes provide impetus for further exploration of research into combining conventional therapies with DC-based anti-tumor immunotherapy [@boonstra2003flexibility].
+Additionally, low doses of cyclophosphamide and paclitaxel have been demonstrated to stimulate DC maturation.
+As a result, these agents are employed in combination with DC vaccines to enhance their efficacy [@boonstra2006macrophages, @shortman2009improving].
 
-Tumors can create an immunosuppressive environment by expressing negative co-stimulatory molecules and secreting factors that inhibit both innate and adaptive immunity. This immunosuppressive milieu employs various mechanisms to evade immune surveillance, including the loss of tumor antigen expression, alterations in MHC molecules, induction of Treg cells, expression of inhibitory ligands, lack of co-stimulation, presence of indoleamine 2,3-dioxygenase promoting Treg cell generation, and production of immunosuppressive cytokines such as IL-10, IL-6, and TGF-β. Overcoming this tolerance and suppression within the tumor microenvironment is crucial for enhancing the immunogenicity and effectiveness of DC vaccines *in vivo* [@zhou1996cd14].
+Tumors can create an immunosuppressive environment by expressing negative co-stimulatory molecules and secreting factors that inhibit both innate and adaptive immunity.
+This immunosuppressive milieu employs various mechanisms to evade immune surveillance, including the loss of tumor antigen expression, alterations in MHC molecules, induction of Treg cells, expression of inhibitory ligands, lack of co-stimulation, presence of indoleamine 2,3-dioxygenase promoting Treg cell generation, and production of immunosuppressive cytokines such as IL-10, IL-6, and TGF-β.
+Overcoming this tolerance and suppression within the tumor microenvironment is crucial for enhancing the immunogenicity and effectiveness of DC vaccines *in vivo* [@zhou1996cd14].
 
-Combining DC-based vaccines with the blockade of inhibitory signals holds significant promise for eliciting a more robust immune response against cancer. Disrupting the interaction between the PD-1 receptor on activated T-cells and its ligand PD-L1 which is overexpressed on tumors and dendritic cells showed improved *in vitro* immune responses. Strategies to interfere with this mechanism include the use of anti-PD-1 antibodies or small interfering RNA (siRNA) to silence PD-L1 and PD-L2 ligands on dendritic cells [@gerner2015strategically, @tacken2006targeting].
+Combining DC-based vaccines with the blockade of inhibitory signals holds significant promise for eliciting a more robust immune response against cancer.
+Disrupting the interaction between the PD-1 receptor on activated T-cells and its ligand PD-L1 which is overexpressed on tumors and dendritic cells showed improved *in vitro* immune responses.
+Strategies to interfere with this mechanism include the use of anti-PD-1 antibodies or small interfering RNA (siRNA) to silence PD-L1 and PD-L2 ligands on dendritic cells [@gerner2015strategically, @tacken2006targeting].
 
-Another valuable target is the cytotoxic T lymphocyte-associated antigen 4 (CTLA-4), which inhibits T-cell activation. Blocking CTLA-4 with antibodies, such as ipilimumab, has demonstrated therapeutic efficacy and received FDA approval for treating metastatic melanoma in 2011 [@gerner2015strategically].
+Another valuable target is the cytotoxic T lymphocyte-associated antigen 4 (CTLA-4), which inhibits T-cell activation.
+Blocking CTLA-4 with antibodies, such as ipilimumab, has demonstrated therapeutic efficacy and received FDA approval for treating metastatic melanoma in 2011 [@gerner2015strategically].
 
-The JAK/STAT signaling pathway, which is crucial for proper dendritic cell (DC) function, can be negatively regulated by the suppressors of cytokine signaling (SOCS) family and glucocorticoid-induced leucine zipper (GILZ). Targeting these inhibitory components, such as by using siRNA to silence SOCS expression, represents a promising strategy to enhance DC functionality and improve immune responses. By relieving the inhibitory effects of SOCS and GILZ on JAK/STAT signaling in DCs, their antigen presentation, cytokine production, and T-cell stimulatory capacities may be augmented, providing additional avenues for immunomodulation [@jinushi2008enhancing]. Inhibiting GILZ has potential therapeutic benefits by altering DC maturation in response to TLR agonists and CD40L, as demonstrated in studies. Furthermore, GILZ expression in macrophages within Burkitt lymphomas has been linked to immune system failure to reject the tumor [@luiten2005immunogenicity].
+The JAK/STAT signaling pathway, which is crucial for proper dendritic cell (DC) function, can be negatively regulated by the suppressors of cytokine signaling (SOCS) family and glucocorticoid-induced leucine zipper (GILZ).
+Targeting these inhibitory components, such as by using siRNA to silence SOCS expression, represents a promising strategy to enhance DC functionality and improve immune responses.
+By relieving the inhibitory effects of SOCS and GILZ on JAK/STAT signaling in DCs, their antigen presentation, cytokine production, and T-cell stimulatory capacities may be augmented, providing additional avenues for immunomodulation [@jinushi2008enhancing].
+Inhibiting GILZ has potential therapeutic benefits by altering DC maturation in response to TLR agonists and CD40L, as demonstrated in studies.
+Furthermore, GILZ expression in macrophages within Burkitt lymphomas has been linked to immune system failure to reject the tumor [@luiten2005immunogenicity].
 
-Immunotherapeutic strategies directed at inhibiting immuno-suppressive cytokines like TGF-β and IL-10 are also under exploration to enhance vaccine effectiveness. IL-10 receptor antibodies have shown promise in enhancing specific immune responses and IL-12 production [@small2007granulocyte]. Additionally, inhibiting TGF-β has been associated with suppressing T~reg~ cell proliferation and increasing the number of TAA-specific T-cells [@higano2008phase].
+Immunotherapeutic strategies directed at inhibiting immuno-suppressive cytokines like TGF-β and IL-10 are also under exploration to enhance vaccine effectiveness.
+IL-10 receptor antibodies have shown promise in enhancing specific immune responses and IL-12 production [@small2007granulocyte].
+Additionally, inhibiting TGF-β has been associated with suppressing T~reg~ cell proliferation and increasing the number of TAA-specific T-cells [@higano2008phase].
 
 ### Prospects for Personalized Combinatorial Therapies
 
-Alternative cancer immunotherapies exhibiting promise encompass cellular transfer of tumor-infiltrating lymphocytes (TILs), genetically modified T-cells, and antibodies targeting immune checkpoint inhibitors [@abbott2019-ll]. Adoptive cellular therapy (ACT) involves isolation and expansion of antigen-specific T-cells *ex vivo* for later transfer back to patients [@chan2021-vo]. Despite its success in hematologic malignancies and melanoma, ACT's efficacy against most solid tumors is limited, primarily due to T-cells' inability to function and persist *in vivo*. Obstacles include the necessity for tumor resection, challenges in isolating or expanding TILs adequately, and the standard lymphodepletion procedure before transfer, causing side effects in roughly 50% of patients [@chan2021-vo].
+Alternative cancer immunotherapies exhibiting promise encompass cellular transfer of tumor-infiltrating lymphocytes (TILs), genetically modified T-cells, and antibodies targeting immune checkpoint inhibitors [@abbott2019-ll].
+Adoptive cellular therapy (ACT) involves isolation and expansion of antigen-specific T-cells *ex vivo* for later transfer back to patients [@chan2021-vo].
+Despite its success in hematologic malignancies and melanoma, ACT's efficacy against most solid tumors is limited, primarily due to T-cells' inability to function and persist *in vivo*.
+Obstacles include the necessity for tumor resection, challenges in isolating or expanding TILs adequately, and the standard lymphodepletion procedure before transfer, causing side effects in roughly 50% of patients [@chan2021-vo].
 
-An alternative approach is genetic engineering of T-cells to express chimeric antigen receptors (CARs), linking an antigen-binding domain to an intracellular T-cell signaling domain [@guo2021-fo]. Prominent results have been achieved with CAR T-cells targeting CD19 in B-cell malignancies, albeit with significant toxicity, including cytokine-release syndrome and neurotoxicity. In contrast, DC-based immunotherapies boast a favorable safety profile, observed over two decades in numerous trials, with minimal toxicity and rare severe immunotoxicity reactions [@perez2019-gb, @kang2022-fo, @sabado2017-zn].
+An alternative approach is genetic engineering of T-cells to express chimeric antigen receptors (CARs), linking an antigen-binding domain to an intracellular T-cell signaling domain [@guo2021-fo].
+Prominent results have been achieved with CAR T-cells targeting CD19 in B-cell malignancies, albeit with significant toxicity, including cytokine-release syndrome and neurotoxicity.
+In contrast, DC-based immunotherapies boast a favorable safety profile, observed over two decades in numerous trials, with minimal toxicity and rare severe immunotoxicity reactions [@perez2019-gb, @kang2022-fo, @sabado2017-zn].
 
-DC vaccines have demonstrated tolerability, inducing only localized reactions at injection sites and occasional systemic effects like fever and malaise. In contrast, immune checkpoint blockade can lead to autoimmune complications affecting various organs. CTLA4 blockade, for instance, may disrupt the effective inhibition of autoreactive T-cells, resulting in immune-related adverse events affecting the liver, skin, endocrine glands, and bowel [@perez2019-gb, @kang2022-fo, @sabado2017-zn]. In summary, immunotherapy holds promise for improving tumor outcomes. Monoclonal antibodies (mAbs), dendritic cell vaccines, immune checkpoint blockade, and adoptive and genetically engineered T-cell therapy have shown encouraging results. Future directions involve integrating several approaches with standard chemotherapy and radiotherapy, determining optimal timing for immunotherapy initiation, and devising strategies to maximize effectiveness while limiting toxicity.
+DC vaccines have demonstrated tolerability, inducing only localized reactions at injection sites and occasional systemic effects like fever and malaise.
+In contrast, immune checkpoint blockade can lead to autoimmune complications affecting various organs.
+CTLA4 blockade, for instance, may disrupt the effective inhibition of autoreactive T-cells, resulting in immune-related adverse events affecting the liver, skin, endocrine glands, and bowel [@perez2019-gb, @kang2022-fo, @sabado2017-zn].
+In summary, immunotherapy holds promise for improving tumor outcomes.
+Monoclonal antibodies (mAbs), dendritic cell vaccines, immune checkpoint blockade, and adoptive and genetically engineered T-cell therapy have shown encouraging results.
+Future directions involve integrating several approaches with standard chemotherapy and radiotherapy, determining optimal timing for immunotherapy initiation, and devising strategies to maximize effectiveness while limiting toxicity.
 
 ## Conclusion & Future Perspectives
 
-Recent T-cell therapy successes have sparked interest in enhancing antitumor T-cell immunity for cancer therapy. Dendritic cells (DCs) stand out as the most effective antigen-presenting cells (APCs) capable of activating naive T-cells and eliciting immune memory responses against cancer.Despite often being dysfunctional or tolerogenic in the tumor microenvironment (TME), a deeper understanding of the regulation of DCs in this context holds therapeutic potential in various clinical settings. Exploring how different dendritic cell subsets may elicit distinct functional immune responses in cancer is a notable area of interest. For instance, the cDC1 subset is associated with the induction of cancer-controlling immunity and increased survival in specific cancer types [@salmon2016expansion; @sanchez2016cancer; @wculek2019effective; @theisen2018wdfy4]. On the other hand, monocyte-derived DCs (MoDCs) play a fundamental role during treatment with immunogenic cell death-inducing chemotherapy agents and radiation therapy [@ma2013anticancer; @casares2005caspase; @apetoh2007toll], while cDC2s are crucial for inducing antitumor CD4^+^ T-cell immunity [@binnewies2019unleashing; @laoui2016tumour]. Although DCs can enhance the effectiveness of established cancer therapies, the development of efficient vaccination strategies requires a deeper understanding of dendritic cell biology and functions. Progress in preclinical studies encourages the exploration of DCs in more effective therapeutic treatments through clinical trials. Strategies to achieve this involve administration in conjunction with neo-antigens, mobilization of endogenous DCs, and the use of stimulating adjuvants. A more precise and refined targeting of DCs could further enhance the efficacy of these approaches. DC vaccination approaches show promise, especially in delaying or preventing relapse and metastasis following debulking surgical procedures. Overall, there is a need to gain more insights into how specific DC subsets with specialized functions can be optimally exploited to coordinate effective immune responses against cancer.
+Recent T-cell therapy successes have sparked interest in enhancing antitumor T-cell immunity for cancer therapy.
+Dendritic cells (DCs) stand out as the most effective antigen-presenting cells (APCs) capable of activating naive T-cells and eliciting immune memory responses against cancer.Despite often being dysfunctional or tolerogenic in the tumor microenvironment (TME), a deeper understanding of the regulation of DCs in this context holds therapeutic potential in various clinical settings.
+Exploring how different dendritic cell subsets may elicit distinct functional immune responses in cancer is a notable area of interest.
+For instance, the cDC1 subset is associated with the induction of cancer-controlling immunity and increased survival in specific cancer types [@salmon2016expansion; @sanchez2016cancer; @wculek2019effective; @theisen2018wdfy4].
+On the other hand, monocyte-derived DCs (MoDCs) play a fundamental role during treatment with immunogenic cell death-inducing chemotherapy agents and radiation therapy [@ma2013anticancer; @casares2005caspase; @apetoh2007toll], while cDC2s are crucial for inducing antitumor CD4^+^ T-cell immunity [@binnewies2019unleashing; @laoui2016tumour].
+Although DCs can enhance the effectiveness of established cancer therapies, the development of efficient vaccination strategies requires a deeper understanding of dendritic cell biology and functions.
+Progress in preclinical studies encourages the exploration of DCs in more effective therapeutic treatments through clinical trials.
+Strategies to achieve this involve administration in conjunction with neo-antigens, mobilization of endogenous DCs, and the use of stimulating adjuvants.
+A more precise and refined targeting of DCs could further enhance the efficacy of these approaches.
+DC vaccination approaches show promise, especially in delaying or preventing relapse and metastasis following debulking surgical procedures.
+Overall, there is a need to gain more insights into how specific DC subsets with specialized functions can be optimally exploited to coordinate effective immune responses against cancer.
 
 ## References
 
