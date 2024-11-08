@@ -11,23 +11,23 @@ author:
         city: Worcester
         state: MA
         url: www.umassmed.edu
-# format: docx
-format: 
-  pdf:
-   keep-tex: true
-   geometry:
-     - top=30mm
-     - left=30mm
-     - heightrounded
-   template-partials: 
-     - title.tex
-   include-in-header:
-      text: |
-        \usepackage[noblocks]{authblk}
-        \renewcommand*{\Authsep}{, }
-        \renewcommand*{\Authand}{, }
-        \renewcommand*{\Authands}{, }
-        \renewcommand\Affilfont{\small}
+format: docx
+#format: 
+#  pdf:
+#   keep-tex: true
+#   geometry:
+#     - top=30mm
+#     - left=30mm
+#     - heightrounded
+#   template-partials: 
+#     - title.tex
+#   include-in-header:
+#      text: |
+#        \usepackage[noblocks]{authblk}
+#        \renewcommand*{\Authsep}{, }
+#        \renewcommand*{\Authand}{, }
+#        \renewcommand*{\Authands}{, }
+#        \renewcommand\Affilfont{\small}
 csl: vancouver.csl
 bibliography: references.bib
 mainfont: "Times New Roman"
@@ -50,7 +50,7 @@ editor:
 ## Abbreviations
 
 | Abbreviations | Definitions |
-|---------------------|--------------------------------------------------|
+|----------------------|--------------------------------------------------|
 | ACT | Adoptive cellular therapy |
 | APC | Antigen presenting cells |
 | CAR | Chimeric antigen receptor |
@@ -141,7 +141,7 @@ This leads to efficient T-cell activation and subsequent B-cell activation.
 Additionally, DCs continuously presents tissue-derived self-antigens to CD4^+^ and CD8^+^ T-cells, leading to tolerance against self-antigens.
 They are integral to the development of an effective adaptive immune response, serving as a critical link between the innate and adaptive immune systems.
 
-![(A) An image of a dendritic cell. The arrows show pseudopodia-like cytoplasmic protrusions during maturation; (B) A confocal image of a human dendritic cell. The nucleus is shown in red. (Image by: Karla Daniels, Central Microscopy Research Facility, University of Iowa)](images/fig_1.png){#fig-dc}
+![(A) An image of a dendritic cell. The arrows show pseudopodia-like cytoplasmic protrusions during maturation [@tan2010-zu]; (B) A confocal image of a human dendritic cell. The nucleus is shown in red. (Image by: Karla Daniels, Central Microscopy Research Facility, University of Iowa)](images/fig_1.png){#fig-dc}
 
 ## Role of Dendritic Cells in the Immune System
 
@@ -432,7 +432,7 @@ Dendritic cells (DCs), known for their effectiveness as antigen-presenting cells
 Dendritic cells exhibit migratory capabilities between lymphoid and non-lymphoid tissues, modulating cytokine and chemokine gradients to regulate inflammation and lymphocyte homing.
 
 | NCT Number | Study Status | Conditions | Combinatorial Treatment |
-|-----------------|-----------------|-----------------|----------------------|
+|-----------------|-----------------|-----------------|---------------------|
 | [NCT05809752](https://clinicaltrials.gov/study/NCT05809752) | Recruiting | Triple Negative Breast Cancer | Single agent |
 | [NCT06435910](https://clinicaltrials.gov/study/NCT06435910) | Recruiting | Multiple Myeloma | Single agent |
 | [NCT05504707](https://clinicaltrials.gov/study/NCT05504707) | Recruiting | Triple Negative Breast Cancer | Single agent |
